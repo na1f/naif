@@ -1,0 +1,71 @@
+<?php
+session_start();
+require_once('connect.php');
+if(isset($_POST) & !empty($_POST)){
+ $username = mysqli_real_escape_string($connection, $_POST['username']);
+ $password = md5($_POST['password']);
+
+ $sql = "SELECT * FROM `login` WHERE username='$username' AND password='$password'";
+ $result = mysqli_query($connection, $sql);
+ $count = mysqli_num_rows($result);
+ if($count == 1){
+  $_SESSION['username'] = $username;
+ }else{
+
+  $fmsg = "<div class='fmsg fmg'>تم ضبط محاولة دخول فاشلة وغير مصرح بها </div>";
+
+  
+ }
+}
+if(isset($_SESSION['username'])){
+ $smsg = "<div class='smsg'>دخول ناجح</div>";
+ echo "
+ <meta HTTP-EQUIV='REFRESH' content='0; url=login/welcome.php'/>";
+}
+
+?>
+
+<html dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/tv.css">
+<title>الوان دوت كوم </title>
+<link rel="icon" href="icon/icon.ico" type="image/x-icon"/>
+</head>
+<body>
+<?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php } ?>
+      <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
+
+   
+       <a href="https://www.snapchat.com/add/fdfk_hd">
+        <img src="img/snap.jpg"class="imgg">
+     </a>
+       <center>
+       <img src="img/link2.png" width="500" height="200" style="margin-top: 1px;">
+       </center>
+       <form  method="POST">
+       <div class="link">
+        <center>
+            <h1 style="color:white">تسجيل الدخول </h1>
+        <div class="nyof">
+       <p class="na">اسم المستخدم  </p>
+       <input type="text" id="fname" name="username" class="username">
+       <p class="na">كلمة المرور </p>
+       <input type="password" id="fname" name="fname" class="username"><br>
+       <br>
+       <input type="submit" value="تسجيل دخول " class="buttom">
+       
+       <a href="web/login.html" style="color: white;" class="rabt">مستخدم جديد ؟</a>
+    </div>
+</form>
+    </center>
+   </div>
+   <h1 class="jj">للتواصل </h1>
+        <h1 class="jj"><span style="color:red;">Email:</span>naif.n1158@gmail.com</h1>
+        <a href="https://www.snapchat.com/add/fdfk_hd" target="_blank">
+          <h1 class="jj"><span style="color:rgb(251, 255, 0);">snap:</span>fdfk_hd</h1>
+        </a>
+</body>
+</html>
