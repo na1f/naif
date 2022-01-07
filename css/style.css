@@ -1,0 +1,265 @@
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.d{
+    color:white;
+    font-size: 25px;
+    text-align: center;
+
+}
+body{
+    background-image:url("../img/h.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img{
+    background-image: url('../img/hack.png');
+
+    padding: 5px;
+
+}
+.b{
+    background-color:blue;
+    margin-top: 10%;
+    height: 150;
+}
+.k{
+    background-color: rgba(71, 43, 43, 0.596);
+    background-attachment: fixed;
+    padding: 10px;
+    padding-right: 15px;
+    height: 25;
+
+}
+a{
+    text-decoration: none;
+    padding-right: 15px;
+    color:rgb(182, 111, 223);
+}
+a:hover{
+    color:red;
+}
+li{
+    display: block;
+    padding-left: 20px;
+    float:right;
+
+}
+li a{
+    padding:15px;
+
+}
+li a:hover{
+    background-color: rgba(71, 43, 43, 0.596);
+    color:rgb(182, 111, 223);
+
+}
+#kk{
+    padding: 5px;
+    background-color: rgba(71, 43, 43, 0.596);
+    border:none;
+    color:white;
+
+}
+.hhh{
+    color:white;
+    border:2px solid blueviolet;
+}
+.klf{
+    width:150;
+    height:250;
+    border:2px solid white
+}
+#kk:hover{
+    background-color: rgba(71, 43, 43, 0.596);
+    color:rgb(182, 111, 223);
+}
+
+.s{
+    float: left;
+}
+    .link{
+        text-align: center;
+        border:2px solid rgba(180, 172, 172, 0);
+        margin-left:350px;
+        margin-right:350px;
+        margin-top:20px;
+        padding:50px;
+        background-color: rgba(122, 77, 77, 0.541);
+
+    }
+
+ 
+	
+    
+   
+.buttom{
+    background-color: tomato;
+    padding:5px;
+    color:white
+}
+
+
+.q{
+    
+    background-color: coral;
+    border: 1px solid red;
+    border-radius: 40px;
+    font-size:15px;
+    color:white;
+    padding:10px;
+    width:150px;
+    height:15px ;
+    display: block;
+    transition: width 1s , height 1s ,font-size 1s , text-shadow 1s , background-color 1s , color 1s;
+
+}
+a:hover.q{
+    color:rgb(132, 219, 18);
+    background-color: rgb(255, 0, 170);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.bu{
+    text-align: center;
+    margin-right: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: green;
+
+}
+.bu:hover{
+    background-color: rgb(37, 199, 107);
+}
+.bu:active{
+    background-color: slateblue;
+    
+}
+.bu:link{
+    background-color: rgb(255, 0, 170);
+   
+}
+.alwan{
+    width: 500px;
+    height: 200;
+    margin-top: 1px;
+}
+/*
+@media screen and (min-width: 400px){
+    .k{
+        background-color: rgba(71, 43, 43, 0.596);
+        background-attachment: fixed;
+        padding: 10px;
+        padding-right: 15px;
+        height: 25;
+        font-size: 35px;
+        padding-bottom: 20px;
+        margin: 0;
+    
+    }
+    .link{
+        text-align: center;
+        border:2px solid rgb(180, 172, 172);
+        margin-left:100px;
+        margin-right: 100px;
+        margin-top:30px;
+        padding:50px;
+        padding-bottom: 150px;
+        background-color: rgba(122, 77, 77, 0.541);
+
+
+    }
+    .q{
+    
+        background-color: coral;
+        border: 1px solid red;
+        border-radius: 40px;
+        font-size:60px;
+        color:white;
+        padding:10px;
+        width:600px;
+        height:90px ;
+        display: block;
+        transition: width 1s , height 1s ,font-size 1s , text-shadow 1s , background-color 1s , color 1s;
+    }  
+    .alwan{
+        width: 800;
+        height: 300;
+        margin-top: 1px;
+    }  
+    .jj{
+        color:white;
+        text-align: center;
+        font-size:55px;
+        
+    }
+    .linkk{
+        text-align: center;
+            border:2px solid rgb(180, 172, 172);
+            margin-left: 300px;
+            margin-right:100px;
+            margin-top:20px;
+            padding:50px;
+            background-color: rgba(122, 77, 77, 0.541);
+    
+    }
+    .z{
+        background-color: rgba(245, 245, 245, 0.479);
+        width: 220px;
+        margin-right:300px;
+        padding-top: 20px;
+    }
+}
+/*
+@media screen and (min-width:401px) and (min-width: 600px){
+    .k{
+        background-color: rgba(71, 43, 43, 0.596);
+        background-attachment: fixed;
+        padding: 10px;
+        padding-right: 15px;
+        height: 25;
+        font-size: 35px;
+        padding-bottom: 20px;
+        margin: 0;
+    
+    }
+    .link{
+        text-align: center;
+        border:2px solid rgb(180, 172, 172);
+        margin-left:100px;
+        margin-right: 100px;
+        margin-top:30px;
+        padding:50px;
+        padding-bottom: 150px;
+        background-color: rgba(122, 77, 77, 0.541);
+
+
+    }
+    .q{
+    
+        background-color: coral;
+        border: 1px solid red;
+        border-radius: 40px;
+        font-size:60px;
+        color:white;
+        padding:10px;
+        width:600px;
+        height:90px ;
+        display: block;
+        transition: width 1s , height 1s ,font-size 1s , text-shadow 1s , background-color 1s , color 1s;
+    }  
+    .alwan{
+        width: 800;
+        height: 300;
+        margin-top: 1px;
+    }  
+    .jj{
+        color:white;
+        text-align: center;
+        font-size:55px;
+        
+    }
+}
